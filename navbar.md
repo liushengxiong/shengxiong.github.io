@@ -1,1 +1,1 @@
-* [HOME](#/) 
+* [HOME](https://shengxiong.us.kg) 
