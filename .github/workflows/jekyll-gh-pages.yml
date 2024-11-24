@@ -36,8 +36,8 @@ jobs:
           cp -r css scripts ./_site/ || true
           cp -r *.png *.jpg ./_site/ || true
           cp README.md ./_site/
-          cp _navbar.md ./_site/navbar.md
-          cp _coverpage.md ./_site/coverpage.md
+          cp navbar.md ./_site/navbar.md
+          cp coverpage.md ./_site/coverpage.md
           cp .nojekyll CNAME ./_site/
           echo "Files in _site:"
           ls -la ./_site

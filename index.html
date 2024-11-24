@@ -9,6 +9,18 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   <style>
     img {text-align: center;}
+    /* 封面图片样式 */
+    section.cover {
+      min-height: 100vh;
+      height: auto !important;
+    }
+    section.cover .cover-main img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      margin: 0;
+    }
+    /* HOME 按钮样式 */
     .app-nav {
       position: fixed;
       right: 20px;
@@ -36,9 +48,14 @@
       homepage: 'README.md',
       coverpage: 'coverpage.md',
       auto2top: true,
-      basePath: '/',
-      nameLink: '/',
+      basePath: './',
+      nameLink: '#/',
       themeColor: '#3F51B5',
+      routerMode: 'hash',
+      alias: {
+        '/': '/README.md',
+        '/README': '/README.md'
+      },
       search: {
         maxAge: 86400000,
         paths: 'auto',
