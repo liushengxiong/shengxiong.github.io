@@ -33,11 +33,13 @@ jobs:
       - name: Create Site Directory
         run: |
           mkdir -p ./_site
-          cp -r css scripts ./_site/
-          cp -r *.png *.jpg ./_site/
-          cp README.md _navbar.md _coverpage.md ./_site/
+          cp -r css scripts ./_site/ || true
+          cp -r *.png *.jpg ./_site/ || true
+          cp README.md ./_site/
+          cp _navbar.md ./_site/navbar.md
+          cp _coverpage.md ./_site/coverpage.md
           cp .nojekyll CNAME ./_site/
-          echo "Listing files in _site directory:"
+          echo "Files in _site:"
           ls -la ./_site
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1

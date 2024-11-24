@@ -9,6 +9,20 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
   <style>
     img {text-align: center;}
+    .app-nav {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      z-index: 1000;
+    }
+    .app-nav a {
+      color: #42b983;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .app-nav a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -17,10 +31,10 @@
     window.$docsify = {
       name: "盛雄作品集",
       repo: 'https://github.com/liushengxiong/shengxiong.github.io',
-      loadNavbar: '_navbar.md',
+      loadNavbar: 'navbar.md',
       loadSidebar: false,
       homepage: 'README.md',
-      coverpage: '_coverpage.md',
+      coverpage: 'coverpage.md',
       auto2top: true,
       basePath: '/',
       nameLink: '/',
