@@ -34,7 +34,7 @@ jobs:
         run: |
           mkdir -p ./_site
           cp -r css scripts images ./_site/
-          cp *.png *.jpg *.md _*.md .nojekyll ./_site/ || true
+          cp *.png *.jpg *.md _*.md .nojekyll CNAME ./_site/ || true
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
