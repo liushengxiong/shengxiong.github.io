@@ -33,7 +33,7 @@ jobs:
       - name: Copy assets
         run: |
           mkdir -p ./_site
-          cp -r css scripts *.png *.jpg ./_site/
+          cp -r css scripts *.png *.jpg *.md _*.md .nojekyll ./_site/
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

@@ -18,49 +18,21 @@
       name: "盛雄作品集",
       repo: 'https://github.com/liushengxiong/shengxiong.github.io',
       loadNavbar: true,
+      loadSidebar: false,
       homepage: 'README.md',
       coverpage: true,
-      // onlyCover: true,
-      coverpage: [
-        '/', 
-        '/the-self-cultivation-of-leeks/cn/',
-        '/the-self-cultivation-of-leeks/en/',
-        '/i-have-a-say/',
-        '/befriending-time/',
-  
-        ],
+      auto2top: true,
       
-
-      search: 'auto',
-
-      // complete configuration parameters
       search: {
-       
-      maxAge: 86400000, // Expiration time, the default one day
-      paths: [
-        '/', 
-        '/the-self-cultivation-of-leeks/cn/',
-        '/the-self-cultivation-of-leeks/en/',
-        '/i-have-a-say/',
-        '/befriending-time/',
-       
-      ], // or 'auto'
-
-      // Localization
-      placeholder: {
-        '/': 'Search',
-      },
-
-      noData: 'No Results!',
-
-      // Headline depth, 1 - 6
-      depth: 2,
-
-      hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-
-      // To avoid search index collision
-      // between multiple websites under the same domain
-      namespace: 'website-1',
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: {
+          '/': 'Search'
+        },
+        noData: 'No Results!',
+        depth: 2,
+        hideOtherSidebarContent: false,
+        namespace: 'website-1',
       }
     }
 </script>
