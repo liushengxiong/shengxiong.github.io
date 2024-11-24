@@ -33,8 +33,9 @@ jobs:
       - name: Create Site Directory
         run: |
           mkdir -p ./_site
-          cp -r css scripts images ./_site/
+          cp -r css scripts ./_site/
           cp *.png *.jpg *.md _*.md .nojekyll CNAME ./_site/ || true
+          ls -la ./_site
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

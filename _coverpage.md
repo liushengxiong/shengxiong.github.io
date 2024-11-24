@@ -1,4 +1,4 @@
-![logo](/photo.png)
+![logo](photo.png)
 
 # 盛雄作品集
 
