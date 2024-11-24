@@ -34,7 +34,10 @@ jobs:
         run: |
           mkdir -p ./_site
           cp -r css scripts ./_site/
-          cp *.png *.jpg *.md _*.md .nojekyll CNAME ./_site/ || true
+          cp -r *.png *.jpg ./_site/
+          cp README.md _navbar.md _coverpage.md ./_site/
+          cp .nojekyll CNAME ./_site/
+          echo "Listing files in _site directory:"
           ls -la ./_site
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
